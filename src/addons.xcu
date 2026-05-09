@@ -83,11 +83,10 @@
       </node>
     </node>
 
-<!--
     <node oor:name="Images">
 
       <node oor:name="m01_EncadrerTexteEnRouge" oor:op="replace">
-        <prop oor:name="URL"><value>macro:///MonExtensionPourElise.PourElise.EncadrerTexteEnRouge</value></prop>
+        <prop oor:name="URL"><value>macro:///elise.format.EncadrerTexteEnRouge</value></prop>
         <node oor:name="UserDefinedImages">
           <prop oor:name="ImageSmallURL"><value>%origin%/icons/Encadrer_Rouge.png</value></prop>
           <prop oor:name="ImageBigURL"><value>%origin%/icons/Encadrer_Rouge.png</value></prop>
@@ -95,7 +94,7 @@
       </node>
 
       <node oor:name="m02_EncadrerTexteEnVert" oor:op="replace">
-        <prop oor:name="URL"><value>macro:///MonExtensionPourElise.PourElise.EncadrerTexteEnVert</value></prop>
+        <prop oor:name="URL"><value>macro:///elise.format.EncadrerTexteEnVert</value></prop>
         <node oor:name="UserDefinedImages">
           <prop oor:name="ImageSmallURL"><value>%origin%/icons/Encadrer_Vert.png</value></prop>
           <prop oor:name="ImageBigURL"><value>%origin%/icons/Encadrer_Vert.png</value></prop>
@@ -103,39 +102,14 @@
       </node>
 
       <node oor:name="m03_EncadrerTexteEnBleu" oor:op="replace">
-        <prop oor:name="URL"><value>macro:///MonExtensionPourElise.PourElise.EncadrerTexteEnBleu</value></prop>
+        <prop oor:name="URL"><value>macro:///elise.format.EncadrerTexteEnBleu</value></prop>
         <node oor:name="UserDefinedImages">
           <prop oor:name="ImageSmallURL"><value>%origin%/icons/Encadrer_Bleu.png</value></prop>
           <prop oor:name="ImageBigURL"><value>%origin%/icons/Encadrer_Bleu.png</value></prop>
         </node>
       </node>
 
-      <node oor:name="m04_EncadrerTexteEnJaune" oor:op="replace">
-        <prop oor:name="URL"><value>macro:///MonExtensionPourElise.PourElise.EncadrerTexteEnJaune</value></prop>
-        <node oor:name="UserDefinedImages">
-          <prop oor:name="ImageSmallURL"><value>%origin%/icons/Encadrer_Jaune.png</value></prop>
-          <prop oor:name="ImageBigURL"><value>%origin%/icons/Encadrer_Jaune.png</value></prop>
-        </node>
-      </node>
-
-      <node oor:name="m05_EncadrerTexteEnRose" oor:op="replace">
-        <prop oor:name="URL"><value>macro:///MonExtensionPourElise.PourElise.EncadrerTexteEnRose</value></prop>
-        <node oor:name="UserDefinedImages">
-          <prop oor:name="ImageSmallURL"><value>%origin%/icons/Encadrer_Rose.png</value></prop>
-          <prop oor:name="ImageBigURL"><value>%origin%/icons/Encadrer_Rose.png</value></prop>
-        </node>
-      </node>
-
-      <node oor:name="m06_EncadrerTexteEnNoir" oor:op="replace">
-        <prop oor:name="URL"><value>macro:///MonExtensionPourElise.PourElise.EncadrerTexteEnNoir</value></prop>
-        <node oor:name="UserDefinedImages">
-          <prop oor:name="ImageSmallURL"><value>%origin%/icons/Encadrer_Noir.png</value></prop>
-          <prop oor:name="ImageBigURL"><value>%origin%/icons/Encadrer_Noir.png</value></prop>
-        </node>
-      </node>
-    
     </node>
 
-    -->
   </node>
 </oor:component-data>
