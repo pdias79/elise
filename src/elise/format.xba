@@ -72,15 +72,15 @@ Sub SupprimerEncadrementTexte
     EncadrementTexte()
 End Sub
 
-Sub tA_EncadrerTexteEnRouge
+Sub EncadrerTexteEnRouge
     EncadrementTexte(Couleur:=Rouge)
 End Sub
 
-Sub tB_EncadrerTexteEnVert
+Sub EncadrerTexteEnVert
     EncadrementTexte(Couleur:=Vert)
 End Sub
 
-Sub tC_EncadrerTexteEnBleu
+Sub EncadrerTexteEnBleu
     EncadrementTexte(Couleur:=Bleu)
 End Sub
 
