@@ -19,21 +19,21 @@
         </prop>
 
         <node oor:name="tA_EncadrerTexteEnRouge" oor:op="replace">
-          <prop oor:name="URL" oor:type="xs:string"><value>macro:///elise.format.EncadrerTexteEnRouge</value></prop>
+          <prop oor:name="URL" oor:type="xs:string"><value>macro:///elise.format.tA_EncadrerTexteEnRouge</value></prop>
           <prop oor:name="Title" oor:type="xs:string"><value xml:lang="fr">Encadrer en rouge</value></prop>
           <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
           <prop oor:name="Context" oor:type="xs:string"><value>com.sun.star.text.TextDocument</value></prop>
         </node>
 
         <node oor:name="tB_EncadrerTexteEnVert" oor:op="replace" oor:insertafter="tA_EncadrerTexteEnRouge">
-          <prop oor:name="URL" oor:type="xs:string"><value>macro:///elise.format.EncadrerTexteEnVert</value></prop>
+          <prop oor:name="URL" oor:type="xs:string"><value>macro:///elise.format.tB_EncadrerTexteEnVert</value></prop>
           <prop oor:name="Title" oor:type="xs:string"><value xml:lang="fr">Encadrer en vert</value></prop>
           <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
           <prop oor:name="Context" oor:type="xs:string"><value>com.sun.star.text.TextDocument</value></prop>
         </node>
 
         <node oor:name="tC_EncadrerTexteEnBleu" oor:op="replace" oor:insertafter="tB_EncadrerTexteEnVert">
-          <prop oor:name="URL" oor:type="xs:string"><value>macro:///elise.format.EncadrerTexteEnBleu</value></prop>
+          <prop oor:name="URL" oor:type="xs:string"><value>macro:///elise.format.tC_EncadrerTexteEnBleu</value></prop>
           <prop oor:name="Title" oor:type="xs:string"><value xml:lang="fr">Encadrer en bleu</value></prop>
           <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
           <prop oor:name="Context" oor:type="xs:string"><value>com.sun.star.text.TextDocument</value></prop>
@@ -85,7 +85,7 @@
     <node oor:name="Images">
 
       <node oor:name="tA_EncadrerTexteEnRouge" oor:op="replace">
-        <prop oor:name="URL"><value>macro:///elise.format.EncadrerTexteEnRouge</value></prop>
+        <prop oor:name="URL"><value>macro:///elise.format.tA_EncadrerTexteEnRouge</value></prop>
         <node oor:name="UserDefinedImages">
           <prop oor:name="ImageSmallURL"><value>%origin%/icons/Encadrer_Rouge.png</value></prop>
           <prop oor:name="ImageBigURL"><value>%origin%/icons/Encadrer_Rouge.png</value></prop>
@@ -93,7 +93,7 @@
       </node>
 
       <node oor:name="tB_EncadrerTexteEnVert" oor:op="replace">
-        <prop oor:name="URL"><value>macro:///elise.format.EncadrerTexteEnVert</value></prop>
+        <prop oor:name="URL"><value>macro:///elise.format.tB_EncadrerTexteEnVert</value></prop>
         <node oor:name="UserDefinedImages">
           <prop oor:name="ImageSmallURL"><value>%origin%/icons/Encadrer_Vert.png</value></prop>
           <prop oor:name="ImageBigURL"><value>%origin%/icons/Encadrer_Vert.png</value></prop>
@@ -101,7 +101,7 @@
       </node>
 
       <node oor:name="tC_EncadrerTexteEnBleu" oor:op="replace">
-        <prop oor:name="URL"><value>macro:///elise.format.EncadrerTexteEnBleu</value></prop>
+        <prop oor:name="URL"><value>macro:///elise.format.tC_EncadrerTexteEnBleu</value></prop>
         <node oor:name="UserDefinedImages">
           <prop oor:name="ImageSmallURL"><value>%origin%/icons/Encadrer_Bleu.png</value></prop>
           <prop oor:name="ImageBigURL"><value>%origin%/icons/Encadrer_Bleu.png</value></prop>
