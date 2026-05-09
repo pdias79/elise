@@ -11,7 +11,7 @@
 
         <!-- Titre affiché dans Affichage > Barres d'outils -->
         <prop oor:name="UIName" oor:type="xs:string">
-          <value>Mon Extension</value>
+          <value>Toolbar Elise</value>
         </prop>
 
         <!-- Ancrage automatique sur la première ligne de toolbars -->
