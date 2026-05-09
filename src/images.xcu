@@ -1,27 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<oor:component-data xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" oor:name="Images" oor:package="org.openoffice.Office">
+<oor:component-data xmlns:oor="http://openoffice.org/2001/registry"
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    oor:name="Images"
+                    oor:package="org.openoffice.Office">
   <node oor:name="UserInterface">
     <node oor:name="Images">
-      <!-- Identifiant unique pour votre jeu d'icônes -->
-      <node oor:name="mon.extension.compilation.images" oor:op="replace">
+
+      <node oor:name="m01_EncadrerTexteEnRouge" oor:op="replace">
         <prop oor:name="URL" oor:type="xs:string">
-          <!-- Le préfixe de votre commande défini dans Addons.xcu -->
           <value>macro:///elise.format.EncadrerTexteEnRouge</value>
         </prop>
         <node oor:name="UserDefinedImages">
-          <node oor:name="image1" oor:op="replace">
-            <prop oor:name="ImageSmallURL" oor:type="xs:string">
-              <!-- Chemin relatif vers l'image dans votre .oxt -->
-              <value>%origin%/icons/Encadrer_Rouge.png</value>
-            </prop>
-            <!--
-            <prop oor:name="ImageBigURL" oor:type="xs:string">
-              <value>%origin%/icons/compile_26.png</value>
-            </prop>
-            -->
-          </node>
+          <prop oor:name="ImageSmallURL" oor:type="xs:string">
+            <value>%origin%/icons/Encadrer_Rouge.png</value>
+          </prop>
+          <prop oor:name="ImageBigURL" oor:type="xs:string">
+            <value>%origin%/icons/Encadrer_Rouge.png</value>
+          </prop>
         </node>
       </node>
+
+      <node oor:name="m02_EncadrerTexteEnVert" oor:op="replace">
+        <prop oor:name="URL" oor:type="xs:string">
+          <value>macro:///elise.format.EncadrerTexteEnVert</value>
+        </prop>
+        <node oor:name="UserDefinedImages">
+          <prop oor:name="ImageSmallURL" oor:type="xs:string">
+            <value>%origin%/icons/Encadrer_Vert.png</value>
+          </prop>
+          <prop oor:name="ImageBigURL" oor:type="xs:string">
+            <value>%origin%/icons/Encadrer_Vert.png</value>
+          </prop>
+        </node>
+      </node>
+
+      <node oor:name="m03_EncadrerTexteEnBleu" oor:op="replace">
+        <prop oor:name="URL" oor:type="xs:string">
+          <value>macro:///elise.format.EncadrerTexteEnBleu</value>
+        </prop>
+        <node oor:name="UserDefinedImages">
+          <prop oor:name="ImageSmallURL" oor:type="xs:string">
+            <value>%origin%/icons/Encadrer_Bleu.png</value>
+          </prop>
+          <prop oor:name="ImageBigURL" oor:type="xs:string">
+            <value>%origin%/icons/Encadrer_Bleu.png</value>
+          </prop>
+        </node>
+      </node>
+
     </node>
   </node>
 </oor:component-data>
