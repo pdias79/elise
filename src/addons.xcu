@@ -12,16 +12,15 @@
               (visible dans Affichage > Barres d'outils)
           ═══════════════════════════════════════════════════════ -->
     <node oor:name="OfficeToolBar">
-      <node oor:name="com.pdias80.elise.toolbar6" oor:op="replace">
+      <node oor:name="com.pdias80.elise.toolbar" oor:op="replace">
         <!-- NOM AFFICHÉ DANS L'INTERFACE LIBREOFFICE -->
         <prop oor:name="Title" oor:type="xs:string">
-          <value xml:lang="fr">Ma Super Barre d'Outils</value>
-          <value xml:lang="en">My Super Toolbar</value>
+          <value xml:lang="fr">La Barre d'Outils pour Elise</value>
         </prop>
 
 
         <node oor:name="m01_EncadrerTexteEnRouge" oor:op="replace">
-          <prop oor:name="URL" oor:type="xs:string"><value>vnd.sun.star.script:elise.format.EncadrerTexteEnRouge?language=Basic&amp;location=extension</value></prop>
+          <prop oor:name="URL" oor:type="xs:string"><value>macro:///elise.format.EncadrerTexteEnRouge</value></prop>
           <prop oor:name="Title" oor:type="xs:string"><value xml:lang="fr">Encadrer en rouge</value></prop>
           <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
           <prop oor:name="Context" oor:type="xs:string"><value>com.sun.star.text.TextDocument</value></prop>
@@ -34,14 +33,14 @@
         </node>
 
         <node oor:name="m02_EncadrerTexteEnVert" oor:op="replace">
-          <prop oor:name="URL" oor:type="xs:string"><value>vnd.sun.star.script:elise.format.EncadrerTexteEnVert?language=Basic&amp;location=extension</value></prop>
+          <prop oor:name="URL" oor:type="xs:string"><value>macro:///elise.format.EncadrerTexteEnVert</value></prop>
           <prop oor:name="Title" oor:type="xs:string"><value xml:lang="fr">Encadrer en vert</value></prop>
           <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
           <prop oor:name="Context" oor:type="xs:string"><value>com.sun.star.text.TextDocument</value></prop>
         </node>
 
         <node oor:name="m03_EncadrerTexteEnBleu" oor:op="replace">
-          <prop oor:name="URL" oor:type="xs:string"><value>vnd.sun.star.script:elise.format.EncadrerTexteEnBleu?language=Basic&amp;location=extension</value></prop>
+          <prop oor:name="URL" oor:type="xs:string"><value>macro:///elise.format.EncadrerTexteEnBleu</value></prop>
           <prop oor:name="Title" oor:type="xs:string"><value xml:lang="fr">Encadrer en bleu</value></prop>
           <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
           <prop oor:name="Context" oor:type="xs:string"><value>com.sun.star.text.TextDocument</value></prop>
