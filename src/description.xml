@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description xmlns="http://openoffice.org/extensions/description/2006"
+             xmlns:d="http://openoffice.org/extensions/description/2006"
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <identifier value="com.pdias80.elise"/>
+  <version value="1.0.1"/>
+
+  <display-name>
+    <name lang="fr">Mon Extension Writer</name>
+    <name lang="en">My Writer Extension</name>
+  </display-name>
+
+  <publisher>
+    <name xlink:href="https://www.pas_de_site.fr" lang="fr">Philippe / Pas d'entreprise</name>
+  </publisher>
+
+  <extension-description>
+    <src xlink:href="description/desc_fr.txt" lang="fr"/>
+  </extension-description>
+
+  <dependencies>
+    <OpenOffice.org-minimal-version value="4.0" d:name="LibreOffice 4.0"/>
+  </dependencies>
+
+</description>

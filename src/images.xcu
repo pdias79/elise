@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oor:component-data xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" oor:name="Images" oor:package="org.openoffice.Office">
+  <node oor:name="ImageIdentifier">
+    <node oor:name="m01_EncadrerTexteEnRouge" oor:op="replace">
+      <prop oor:name="ImageIdentifier" oor:type="xs:string">
+        <value>%origin%/icons/Encadrer_Rouge.png</value>
+      </prop>
+    </node>
+    <node oor:name="m02_EncadrerTexteEnVert" oor:op="replace">
+      <prop oor:name="ImageIdentifier" oor:type="xs:string">
+        <value>%origin%/icons/Encadrer_Vert.png</value>
+      </prop>
+    </node>
+    <node oor:name="m03_EncadrerTexteEnBleu" oor:op="replace">
+      <prop oor:name="ImageIdentifier" oor:type="xs:string">
+        <value>%origin%/icons/Encadrer_Bleu.png</value>
+      </prop>
+    </node>
+  </node>
+</oor:component-data>

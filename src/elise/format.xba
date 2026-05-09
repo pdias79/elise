@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="format" script:language="Basic">
+<![CDATA[
+' ============================================================
+'  PourElise — Macros de la barre d'outils PourElise
+'  Remplacez chaque Sub par votre code existant.
+' ============================================================
+
+REM  *****  BASIC  *****
+
+' RGB : Unités = bleu vert rouge
+const Jaune_fonce = 13937152 'RGB(212, 170, 0)
+const Jaune_clair   = 16763904  'RGB(255, 204, 0)
+const Jaune=Jaune_clair
+
+ 'RGB(0,128,128)
+
+
+const Vert=4499968 ' RGB(68, 170, 0)
+const Rose=16711935 ' RGB(255,0,255)
+const Noir=0 ' RGB(0,0,0)
+const Rouge=13121335' RGB(200,55,55)
+const Bleu=52171' RGB(0, 203, 203)
+
+
+Sub EncadrementTexte(Optional couleur)
+    Dim oDoc As Object
+    Dim oSel As Object
+    Dim oCursor As Object
+    Dim oBorder As New com.sun.star.table.BorderLine2
+    
+    If IsMissing(couleur) Then
+        _Width = 0 ' Voici votre valeur par défaut
+        couleur = -1
+        padding = 0
+    Else
+        _Width = 20 
+        padding = 50
+    End If    
+
+   ' oDoc = ThisComponent
+    'oSel = oDoc.CurrentSelection(0)
+        oDoc = ThisComponent
+    oSel = oDoc.CurrentController.Selection
+    If not oSel.supportsService("com.sun.star.text.TextRanges") Then
+      exit sub
+    end if  
+     oCursor = oSel.getByIndex(0)
+        
+    ' On crée un curseur sur la sélection pour accéder aux propriétés de paragraphe
+    'oCursor = oDoc.Text.createTextCursorByRange(oSel)
+
+    ' On définit une bordure "vide" (largeur à 0)
+    oBorder.Color = couleur
+    oBorder.LineWidth = _Width
+    oBorder.OuterLineWidth =_Width
+
+    ' On applique cette bordure vide aux 4 côtés du paragraphe
+    oCursor.CharTopBorder = oBorder
+    oCursor.CharBottomBorder = oBorder
+    oCursor.CharLeftBorder = oBorder
+    oCursor.CharRightBorder = oBorder
+
+    ' Optionnel : Ajouter un peu d'espace (padding) entre le texte et le cadre
+    oCursor.CharTopBorderDistance = padding
+    oCursor.CharBottomBorderDistance =padding
+    
+End Sub
+
+Sub SupprimerEncadrementTexte
+    EncadrementTexte()
+End Sub
+
+Sub EncadrerTexteEnRouge
+    EncadrementTexte(Couleur:=Rouge)
+End Sub
+
+Sub EncadrerTexteEnVert
+    EncadrementTexte(Couleur:=Vert)
+End Sub
+
+Sub EncadrerTexteEnBleu
+    EncadrementTexte(Couleur:=Bleu)
+End Sub
+
+Sub EncadrerTexteEnJaune
+    EncadrementTexte(Couleur:=Jaune)
+End Sub
+
+Sub EncadrerTexteEnRose
+    EncadrementTexte(Couleur:=Rose)
+End Sub
+
+Sub EncadrerTexteEnNoir
+    EncadrementTexte(Couleur:=Noir)
+End Sub
+
+
+Sub Souligner(optional couleur)
+    Dim oDoc As Object
+    Dim oSelection As Object
+    Dim oCursor As Object
+    Dim i As Integer
+
+    ' Accéder au document actuel
+    oDoc = ThisComponent
+    
+    ' Récupérer la sélection de l'utilisateur
+    oSelection = oDoc.getCurrentSelection()
+
+    ' Vérifier s'il y a bien une sélection
+    If Not IsNull(oSelection) Then
+        For i = 0 To oSelection.getCount() - 1
+            oCursor = oSelection.getByIndex(i)
+            
+            If IsMissing(couleur) Then
+                ' On désactive le soulignement (NONE)
+                oCursor.CharUnderline = com.sun.star.awt.FontUnderline.NONE
+                oCursor.CharUnderlineHasColor = False
+            
+                ' On remet la couleur de soulignement par défaut (Automatique)
+                oCursor.CharUnderlineColor = -1
+            else
+            
+                ' Appliquer le style de soulignement (Simple)
+                oCursor.CharUnderline = com.sun.star.awt.FontUnderline.SINGLE
+                oCursor.CharUnderlineHasColor = True
+            
+                ' Définir la couleur du soulignement en Rouge (Format RGB)
+                ' La valeur 16711680 correspond au rouge pur
+                oCursor.CharUnderlineColor = couleur
+            End If
+        Next i
+    End If
+End Sub
+
+
+Sub SupprimerSoulignement
+    Souligner()
+End Sub
+
+Sub SoulignerEnRouge
+    Souligner(Couleur:=Rouge)
+End Sub
+
+Sub SoulignerEnVert
+    Souligner(Couleur:=Vert)
+End Sub
+
+Sub SoulignerEnBleu
+    Souligner(Couleur:=Bleu)
+End Sub
+
+Sub SoulignerEnJaune
+    Souligner(Couleur:=Jaune)
+End Sub
+
+Sub SoulignerEnRose
+    Souligner(Couleur:=Rose)
+End Sub
+
+Sub SoulignerEnNoir
+    Souligner(Couleur:=Noir)
+End Sub
+
+
+
+Sub Surligner(optional couleur)
+    Dim oDoc As Object
+    Dim oSelection As Object
+    Dim oCursor As Object
+    Dim i As Integer
+
+    oDoc = ThisComponent
+    oSelection = oDoc.getCurrentSelection()
+
+    If Not IsNull(oSelection) Then
+        For i = 0 To oSelection.getCount() - 1
+            oCursor = oSelection.getByIndex(i)
+
+            If IsMissing(couleur) Then
+                ' Appliquer la couleur de mise en évidence (Surlignage)
+                ' -1 : Défaut = rien
+                oCursor.CharBackColor = -1
+            
+                ' Optionnel : Passer le texte en blanc pour la lisibilité
+                'oCursor.CharColor = RGB(255, 255, 255)
+            else
+                ' Appliquer la couleur de mise en évidence (Surlignage)
+                oCursor.CharBackColor = couleur
+            
+                ' Optionnel : Passer le texte en blanc pour la lisibilité
+                'oCursor.CharColor = RGB(255, 255, 255)
+            End If            
+        Next i
+    End If
+End Sub
+
+
+Sub SupprimerSurlignement
+    Surligner()
+End Sub
+
+Sub SurlignerEnRouge
+    Surligner(Couleur:=Rouge)
+End Sub
+
+Sub SurlignerEnVert
+    Surligner(Couleur:=Vert)
+End Sub
+
+Sub SurlignerEnBleu
+    Surligner(Couleur:=Bleu)
+End Sub
+
+Sub SurlignerEnJaune
+    Surligner(Couleur:=Jaune)
+End Sub
+
+Sub SurlignerEnRose
+    Surligner(Couleur:=Rose)
+End Sub
+
+Sub SurlignerEnNoir
+    Surligner(Couleur:=Noir)
+End Sub
+
+
+
+Sub InsererDateCours
+    Dim oDoc As Object
+    Dim oText As Object
+    Dim oCursor As Object
+    
+    oDoc = ThisComponent
+    oText = oDoc.Text
+    ' On récupère la position actuelle du curseur
+    oCursor = oDoc.CurrentController.getViewCursor()
+
+    ' 1. On définit le formatage en italique
+    oCursor.CharPosture = com.sun.star.awt.FontSlant.ITALIC
+    
+    ' 2. On génère la date (le format "nnnn" donne le jour, "d mmmm yyyy" le reste)
+    ' Note : Le système utilisera la date actuelle de l'ordinateur
+    Dim dateStr As String
+    dateStr = Format(Now, "nnnn d mmmm yyyy")
+    
+    ' 3. On insère la date et deux retours à la ligne
+    oText.insertString(oCursor, dateStr & Chr(13) & Chr(13), False)
+    
+    ' 4. On enlève l'italique pour la suite du cours
+    oCursor.CharPosture = com.sun.star.awt.FontSlant.NONE
+    
+End Sub
+
+
+
+
+
+Sub SupprimerFormatage
+  SupprimerEncadrementTexte
+  SupprimerSoulignement
+  SupprimerSurlignement
+      ChangerCouleur(Couleur:=Noir)
+ End Sub
+ 
+ 
+ 
+ Sub ToggleVerificationLinguistique_old(optional status) 
+    Dim oLinguServiceManager As Object
+    Dim oLinguProps As Object
+    Dim bState As Boolean
+
+    ' Accéder aux propriétés du service linguistique
+    oLinguServiceManager = createUnoService("com.sun.star.linguistic2.LinguServiceManager")
+    oLinguProps = createUnoService("com.sun.star.linguistic2.LinguProperties")
+
+    ' Récupérer l'état actuel de la vérification automatique
+    If IsMissing(couleur) Then
+        status = not oLinguProps.IsSpellAuto
+    end if    
+    
+    ' Inverser l'état (Toggle)
+    If status = False Then
+        oLinguProps.IsSpellAuto = False        ' Désactiver l'orthographe
+'        oLinguProps.IsGrammarAuto = False      ' Désactiver la grammaire
+        'MsgBox "Vérification désactivée", 64, "Linguistique"
+    Else
+        oLinguProps.IsSpellAuto = True         ' Activer l'orthographe
+        'oLinguProps.IsGrammarAuto = True       ' Activer la grammaire
+        'MsgBox "Vérification activée", 64, "Linguistique"
+    End If
+    ThisComponent.reformat()
+End Sub
+
+
+Sub ToggleVerificationLinguistique(optional status) 
+    Dim oLinguProps As Object
+    
+    ' Accéder au service des propriétés linguistiques
+    oLinguProps = createUnoService("com.sun.star.linguistic2.LinguProperties")
+
+    ' 1. Activer l'orthographe automatique
+    oLinguProps.setPropertyValue("IsSpellAuto", status)
+    
+    ' 2. Activer la grammaire automatique (avec gestion d'erreur sécurisée)
+    On Error Resume Next
+    oLinguProps.setPropertyValue("IsGrammarAuto", status)
+    On Error GoTo 0
+    
+    ' Petit retour visuel dans la barre d'état
+    'ThisComponent.CurrentController.StatusIndicator.start("Correction activée", 1)
+    'Wait 1000
+    'ThisComponent.CurrentController.StatusIndicator.end()
+    ThisComponent.reformat()
+End Sub
+
+
+
+
+
+Sub ActiverVerificationLinguistique
+    ToggleVerificationLinguistique_old(True)
+end sub
+    
+Sub DesactiverVerificationLinguistique
+    ToggleVerificationLinguistique_old(False)
+end sub 
+
+
+
+Sub ChangerCouleur(optional couleur)
+    Dim oDoc As Object
+    Dim oSelection As Object
+    Dim oCursor As Object
+    Dim i As Integer
+
+    oDoc = ThisComponent
+    oSelection = oDoc.getCurrentSelection()
+
+    If Not IsNull(oSelection) Then
+        For i = 0 To oSelection.getCount() - 1
+            oCursor = oSelection.getByIndex(i)
+
+            If IsMissing(couleur) Then
+                ' Appliquer la couleur de mise en évidence (Surlignage)
+                ' -1 => Défaut = rien
+                oCursor.CharColor = -1
+            else
+                ' Appliquer la couleur de mise en évidence (Surlignage)
+                oCursor.CharColor = couleur
+
+            End If            
+        Next i
+    End If
+End Sub
+
+
+Sub ChangerCouleurEnNoir
+    ChangerCouleur(Couleur:=Noir)
+End Sub
+
+Sub ChangerCouleurEnRouge
+    ChangerCouleur(Couleur:=Rouge)
+End Sub
+
+Sub ChangerCouleurEnVert
+    ChangerCouleur(Couleur:=Vert)
+End Sub
+
+Sub ChangerCouleurEnBleu
+    ChangerCouleur(Couleur:=Bleu)
+End Sub
+
+Sub ChangerCouleurEnJaune
+    ChangerCouleur(Couleur:=Jaune)
+End Sub
+
+Sub ChangerCouleurEnRose
+    ChangerCouleur(Couleur:=Rose)
+End Sub
+]]>
+
+</script:module>

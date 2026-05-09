@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oor:component-data xmlns:oor="http://openoffice.org/2001/registry"
+                    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    oor:name="Addons"
+                    oor:package="org.openoffice.Office">
+  <node oor:name="AddonUI">
+
+
+
+      <!-- ═══════════════════════════════════════════════════════
+          1. Déclaration de la barre d'outils
+              (visible dans Affichage > Barres d'outils)
+          ═══════════════════════════════════════════════════════ -->
+    <node oor:name="OfficeToolBar">
+      <node oor:name="com.pdias80.elise.toolbar6" oor:op="replace">
+        <!-- NOM AFFICHÉ DANS L'INTERFACE LIBREOFFICE -->
+        <prop oor:name="Title" oor:type="xs:string">
+          <value xml:lang="fr">Ma Super Barre d'Outils</value>
+          <value xml:lang="en">My Super Toolbar</value>
+        </prop>
+
+
+        <node oor:name="m01_EncadrerTexteEnRouge" oor:op="replace">
+          <prop oor:name="URL" oor:type="xs:string"><value>vnd.sun.star.script:elise.format.EncadrerTexteEnRouge?language=Basic&amp;location=extension</value></prop>
+          <prop oor:name="Title" oor:type="xs:string"><value xml:lang="fr">Encadrer en rouge</value></prop>
+          <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
+          <prop oor:name="Context" oor:type="xs:string"><value>com.sun.star.text.TextDocument</value></prop>
+        </node>
+
+        <node oor:name="m01_ZZZZ_Separateur" oor:op="replace">
+          <prop oor:name="Type" oor:type="xs:short">
+            <value>1</value> // 0 = bouton, 1 = séparateur 
+          </prop>
+        </node>
+
+        <node oor:name="m02_EncadrerTexteEnVert" oor:op="replace">
+          <prop oor:name="URL" oor:type="xs:string"><value>vnd.sun.star.script:elise.format.EncadrerTexteEnVert?language=Basic&amp;location=extension</value></prop>
+          <prop oor:name="Title" oor:type="xs:string"><value xml:lang="fr">Encadrer en vert</value></prop>
+          <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
+          <prop oor:name="Context" oor:type="xs:string"><value>com.sun.star.text.TextDocument</value></prop>
+        </node>
+
+        <node oor:name="m03_EncadrerTexteEnBleu" oor:op="replace">
+          <prop oor:name="URL" oor:type="xs:string"><value>vnd.sun.star.script:elise.format.EncadrerTexteEnBleu?language=Basic&amp;location=extension</value></prop>
+          <prop oor:name="Title" oor:type="xs:string"><value xml:lang="fr">Encadrer en bleu</value></prop>
+          <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
+          <prop oor:name="Context" oor:type="xs:string"><value>com.sun.star.text.TextDocument</value></prop>
+        </node>
+
+
+        <!-- Exemple d'ajout d'une commande intégrée de LibreOffice
+
+        <node oor:name="m11_ButtonSpellOnline" oor:op="replace">
+          <prop oor:name="URL" oor:type="xs:string">
+            <value>.uno:SpellOnline</value>
+          </prop>
+          <prop oor:name="Title" oor:type="xs:string">
+            <value>Vérification orthographique automatique</value>
+          </prop>
+          <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
+        </node>
+
+        -->
+      </node>
+    </node>
+
+    <!-- ═══════════════════════════════════════════════════════
+          2. Menu (conservé)
+          ═══════════════════════════════════════════════════════ -->
+    <node oor:name="OfficeMenuBar">
+      <node oor:name="com.pdias80.elise.menu" oor:op="replace">
+        <prop oor:name="Title" oor:type="xs:string">
+          <value xml:lang="fr">Mon Extension 01</value>
+        </prop>
+        <node oor:name="Submenu">
+          <node oor:name="m01" oor:op="replace">
+            <prop oor:name="URL" oor:type="xs:string">
+              <value>macro:///MonExtensionPourElise.PourElise.Macro01</value>
+            </prop>
+            <prop oor:name="Title" oor:type="xs:string">
+              <value xml:lang="fr">Action 01</value>
+            </prop>
+          </node>
+        </node>
+      </node>
+    </node>
+
+<!--
+    <node oor:name="Images">
+
+      <node oor:name="m01_EncadrerTexteEnRouge" oor:op="replace">
+        <prop oor:name="URL"><value>macro:///MonExtensionPourElise.PourElise.EncadrerTexteEnRouge</value></prop>
+        <node oor:name="UserDefinedImages">
+          <prop oor:name="ImageSmallURL"><value>%origin%/icons/Encadrer_Rouge.png</value></prop>
+          <prop oor:name="ImageBigURL"><value>%origin%/icons/Encadrer_Rouge.png</value></prop>
+        </node>
+      </node>
+
+      <node oor:name="m02_EncadrerTexteEnVert" oor:op="replace">
+        <prop oor:name="URL"><value>macro:///MonExtensionPourElise.PourElise.EncadrerTexteEnVert</value></prop>
+        <node oor:name="UserDefinedImages">
+          <prop oor:name="ImageSmallURL"><value>%origin%/icons/Encadrer_Vert.png</value></prop>
+          <prop oor:name="ImageBigURL"><value>%origin%/icons/Encadrer_Vert.png</value></prop>
+        </node>
+      </node>
+
+      <node oor:name="m03_EncadrerTexteEnBleu" oor:op="replace">
+        <prop oor:name="URL"><value>macro:///MonExtensionPourElise.PourElise.EncadrerTexteEnBleu</value></prop>
+        <node oor:name="UserDefinedImages">
+          <prop oor:name="ImageSmallURL"><value>%origin%/icons/Encadrer_Bleu.png</value></prop>
+          <prop oor:name="ImageBigURL"><value>%origin%/icons/Encadrer_Bleu.png</value></prop>
+        </node>
+      </node>
+
+      <node oor:name="m04_EncadrerTexteEnJaune" oor:op="replace">
+        <prop oor:name="URL"><value>macro:///MonExtensionPourElise.PourElise.EncadrerTexteEnJaune</value></prop>
+        <node oor:name="UserDefinedImages">
+          <prop oor:name="ImageSmallURL"><value>%origin%/icons/Encadrer_Jaune.png</value></prop>
+          <prop oor:name="ImageBigURL"><value>%origin%/icons/Encadrer_Jaune.png</value></prop>
+        </node>
+      </node>
+
+      <node oor:name="m05_EncadrerTexteEnRose" oor:op="replace">
+        <prop oor:name="URL"><value>macro:///MonExtensionPourElise.PourElise.EncadrerTexteEnRose</value></prop>
+        <node oor:name="UserDefinedImages">
+          <prop oor:name="ImageSmallURL"><value>%origin%/icons/Encadrer_Rose.png</value></prop>
+          <prop oor:name="ImageBigURL"><value>%origin%/icons/Encadrer_Rose.png</value></prop>
+        </node>
+      </node>
+
+      <node oor:name="m06_EncadrerTexteEnNoir" oor:op="replace">
+        <prop oor:name="URL"><value>macro:///MonExtensionPourElise.PourElise.EncadrerTexteEnNoir</value></prop>
+        <node oor:name="UserDefinedImages">
+          <prop oor:name="ImageSmallURL"><value>%origin%/icons/Encadrer_Noir.png</value></prop>
+          <prop oor:name="ImageBigURL"><value>%origin%/icons/Encadrer_Noir.png</value></prop>
+        </node>
+      </node>
+    
+    </node>
+
+    -->
+  </node>
+</oor:component-data>
