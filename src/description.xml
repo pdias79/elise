@@ -5,14 +5,17 @@
 
   <identifier value="com.pdias80.elise"/>
   <version value="1.0.1"/>
-
+  
+  <icon>
+        <default xlink:href="images/chat.png" />
+  </icon>
+    
   <display-name>
-    <name lang="fr">Mon Extension Writer</name>
-    <name lang="en">My Writer Extension</name>
+    <name lang="fr">Extension pour Elise</name>
   </display-name>
 
   <publisher>
-    <name xlink:href="https://www.pas_de_site.fr" lang="fr">Philippe / Pas d'entreprise</name>
+    <name xlink:href="https://www.pas_de_site.fr" lang="fr">Philippe DIAS</name>
   </publisher>
 
   <extension-description>

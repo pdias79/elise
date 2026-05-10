@@ -10,18 +10,18 @@
 REM  *****  BASIC  *****
 
 ' RGB : Unités = bleu vert rouge
-const Jaune_fonce = 13937152 'RGB(212, 170, 0)
-const Jaune_clair   = 16763904  'RGB(255, 204, 0)
+const Jaune_fonce = 13937152 'RGB(212, 170, 0)     'D4AA00
+const Jaune_clair   = 16763904  'RGB(255, 204, 0)  'FFCC00
 const Jaune=Jaune_clair
 
  'RGB(0,128,128)
 
 
-const Vert=4499968 ' RGB(68, 170, 0)
-const Rose=16711935 ' RGB(255,0,255)
-const Noir=0 ' RGB(0,0,0)
-const Rouge=13121335' RGB(200,55,55)
-const Bleu=52171' RGB(0, 203, 203)
+const Vert=4499968 ' RGB(68, 170, 0) '44AA00
+const Rose=16711935 ' RGB(255,0,255) 'FF00FF
+const Noir=0 ' RGB(0,0,0)             
+const Rouge=13121335' RGB(200,55,55) 'C83737
+const Bleu=52171' RGB(0, 203, 203)   '00CBCB
 
 
 Sub EncadrementTexte(Optional couleur)
@@ -97,7 +97,7 @@ Sub EncadrerTexteEnNoir
 End Sub
 
 
-Sub Souligner(optional couleur)
+Sub SoulignerTexte(optional couleur)
     Dim oDoc As Object
     Dim oSelection As Object
     Dim oCursor As Object
@@ -136,37 +136,37 @@ Sub Souligner(optional couleur)
 End Sub
 
 
-Sub SupprimerSoulignement
-    Souligner()
+Sub SupprimerSoulignementTexte
+    SoulignerTexte()
 End Sub
 
-Sub SoulignerEnRouge
-    Souligner(Couleur:=Rouge)
+Sub SoulignerTexteEnRouge
+    SoulignerTexte(Couleur:=Rouge)
 End Sub
 
-Sub SoulignerEnVert
-    Souligner(Couleur:=Vert)
+Sub SoulignerTexteEnVert
+    SoulignerTexte(Couleur:=Vert)
 End Sub
 
-Sub SoulignerEnBleu
-    Souligner(Couleur:=Bleu)
+Sub SoulignerTexteEnBleu
+    SoulignerTexte(Couleur:=Bleu)
 End Sub
 
-Sub SoulignerEnJaune
-    Souligner(Couleur:=Jaune)
+Sub SoulignerTexteEnJaune
+    SoulignerTexte(Couleur:=Jaune)
 End Sub
 
-Sub SoulignerEnRose
-    Souligner(Couleur:=Rose)
+Sub SoulignerTexteEnRose
+    SoulignerTexte(Couleur:=Rose)
 End Sub
 
-Sub SoulignerEnNoir
-    Souligner(Couleur:=Noir)
+Sub SoulignerTexteEnNoir
+    SoulignerTexte(Couleur:=Noir)
 End Sub
 
 
 
-Sub Surligner(optional couleur)
+Sub SurlignerTexte(optional couleur)
     Dim oDoc As Object
     Dim oSelection As Object
     Dim oCursor As Object
@@ -198,32 +198,32 @@ Sub Surligner(optional couleur)
 End Sub
 
 
-Sub SupprimerSurlignement
-    Surligner()
+Sub SupprimerSurlignageTexte
+    SurlignerTexte()
 End Sub
 
-Sub SurlignerEnRouge
-    Surligner(Couleur:=Rouge)
+Sub SurlignerTexteEnRouge
+    SurlignerTexte(Couleur:=Rouge)
 End Sub
 
-Sub SurlignerEnVert
-    Surligner(Couleur:=Vert)
+Sub SurlignerTexteEnVert
+    SurlignerTexte(Couleur:=Vert)
 End Sub
 
-Sub SurlignerEnBleu
-    Surligner(Couleur:=Bleu)
+Sub SurlignerTexteEnBleu
+    SurlignerTexte(Couleur:=Bleu)
 End Sub
 
-Sub SurlignerEnJaune
-    Surligner(Couleur:=Jaune)
+Sub SurlignerTexteEnJaune
+    SurlignerTexte(Couleur:=Jaune)
 End Sub
 
-Sub SurlignerEnRose
-    Surligner(Couleur:=Rose)
+Sub SurlignerTexteEnRose
+    SurlignerTexte(Couleur:=Rose)
 End Sub
 
-Sub SurlignerEnNoir
-    Surligner(Couleur:=Noir)
+Sub SurlignerTexteEnNoir
+    SurlignerTexte(Couleur:=Noir)
 End Sub
 
 
@@ -260,10 +260,10 @@ End Sub
 
 Sub SupprimerFormatage
   SupprimerEncadrementTexte
-  SupprimerSoulignement
-  SupprimerSurlignement
-      ChangerCouleur(Couleur:=Noir)
- End Sub
+  SupprimerSoulignementTexte
+  SupprimerSurlignageTexte
+  ChangerCouleurTexte(Couleur:=Noir)
+End Sub
  
  
  
@@ -330,7 +330,7 @@ end sub
 
 
 
-Sub ChangerCouleur(optional couleur)
+Sub ChangerCouleurTexte(optional couleur)
     Dim oDoc As Object
     Dim oSelection As Object
     Dim oCursor As Object
@@ -357,28 +357,28 @@ Sub ChangerCouleur(optional couleur)
 End Sub
 
 
-Sub ChangerCouleurEnNoir
-    ChangerCouleur(Couleur:=Noir)
+Sub ChangerCouleurTexteEnNoir
+    ChangerCouleurTexte(Couleur:=Noir)
 End Sub
 
-Sub ChangerCouleurEnRouge
-    ChangerCouleur(Couleur:=Rouge)
+Sub ChangerCouleurTexteEnRouge
+    ChangerCouleurTexte(Couleur:=Rouge)
 End Sub
 
-Sub ChangerCouleurEnVert
-    ChangerCouleur(Couleur:=Vert)
+Sub ChangerCouleurTexteEnVert
+    ChangerCouleurTexte(Couleur:=Vert)
 End Sub
 
-Sub ChangerCouleurEnBleu
-    ChangerCouleur(Couleur:=Bleu)
+Sub ChangerCouleurTexteEnBleu
+    ChangerCouleurTexte(Couleur:=Bleu)
 End Sub
 
-Sub ChangerCouleurEnJaune
-    ChangerCouleur(Couleur:=Jaune)
+Sub ChangerCouleurTexteEnJaune
+    ChangerCouleurTexte(Couleur:=Jaune)
 End Sub
 
-Sub ChangerCouleurEnRose
-    ChangerCouleur(Couleur:=Rose)
+Sub ChangerCouleurTexteEnRose
+    ChangerCouleurTexte(Couleur:=Rose)
 End Sub
 ]]>
 

@@ -1,5 +1,1 @@
-
-Blablabla
-
-[British locale (A4 paper size)]
-
+Barre d'outils pour Elise.

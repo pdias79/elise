@@ -18,9 +18,9 @@ zip -r ../"$OUT" \
   description.xml \
   description/ \
   addons.xcu \
-  images.xcu \
   WriterWindowState.xcu \
   elise/ \
+  images/ \
   icons/
 
 cd .
