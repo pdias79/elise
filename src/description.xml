@@ -3,19 +3,19 @@
              xmlns:d="http://openoffice.org/extensions/description/2006"
              xmlns:xlink="http://www.w3.org/1999/xlink">
 
-  <identifier value="com.pdias80.elise"/>
-  <version value="1.0.1"/>
+  <identifier value="com.pdias79.elise"/>
+  <version value="1.0"/>
   
   <icon>
         <default xlink:href="images/chat.png" />
   </icon>
     
   <display-name>
-    <name lang="fr">Extension pour Elise</name>
+    <name lang="fr">Barre d'outils pour Elise</name>
   </display-name>
 
   <publisher>
-    <name xlink:href="https://www.pas_de_site.fr" lang="fr">Philippe DIAS</name>
+    <name xlink:href="https://github.com/pdias79/elise" lang="fr">pdias79</name>
   </publisher>
 
   <extension-description>

@@ -6,7 +6,7 @@
   <node oor:name="UIElements">
     <node oor:name="States">
 
-      <node oor:name="private:resource/toolbar/addon_com.pdias80.elise.toolbar"
+      <node oor:name="private:resource/toolbar/addon_com.pdias79.elise.toolbar"
             oor:op="replace">
 
         <!-- Titre affiché dans Affichage > Barres d'outils -->

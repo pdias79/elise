@@ -14,7 +14,7 @@
           IMPORTANT = L'ordre est respecté si name est un numérique pur
           ═══════════════════════════════════════════════════════ -->
     <node oor:name="OfficeToolBar">
-      <node oor:name="com.pdias80.elise.toolbar" oor:op="replace">
+      <node oor:name="com.pdias79.elise.toolbar" oor:op="replace">
         <!-- NOM AFFICHÉ DANS L'INTERFACE LIBREOFFICE -->
         <prop oor:name="Title" oor:type="xs:string">
           <value xml:lang="fr">La Barre d'Outils pour Elise</value>
@@ -209,10 +209,12 @@
     </node>
 
     <!-- ═══════════════════════════════════════════════════════
-          2. Menu (conservé)
+          2. Menu => Illustration ajout d'un menu 
           ═══════════════════════════════════════════════════════ -->
+    
+    <!--
     <node oor:name="OfficeMenuBar">
-      <node oor:name="com.pdias80.elise.menu" oor:op="replace">
+      <node oor:name="com.pdias79.elise.menu" oor:op="replace">
         <prop oor:name="Title" oor:type="xs:string">
           <value xml:lang="fr">Mon Extension 01</value>
         </prop>
@@ -228,6 +230,7 @@
         </node>
       </node>
     </node>
+    -->
 
     <node oor:name="Images">
 
