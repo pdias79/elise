@@ -8,6 +8,8 @@ Cette barre d'outils permet :
 - de formatter rapidement du texte
 - activer/désactier la vérification orthographique
 - insérer la date du jour
+
+Cette barre dispose de deux jeux d'icones thème sombre/clair.
 <br>
 <br>
 
