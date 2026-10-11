@@ -18,6 +18,8 @@ zip -r ../"$OUT" \
   description.xml \
   description/ \
   addons.xcu \
+  Jobs.xcu \
+  elise_appearance.py \
   WriterWindowState.xcu \
   elise/ \
   images/ \

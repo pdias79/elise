@@ -23,7 +23,17 @@
     manifest:full-path="elise/format.xba"/>
 
   <manifest:file-entry
+    manifest:media-type="application/vnd.sun.star.basic-module"
+    manifest:full-path="elise/icones.xba"/>
+  <manifest:file-entry
     manifest:media-type="text/xml"
     manifest:full-path="elise/dialog.xlb"/>
+
+  <manifest:file-entry
+  manifest:media-type="application/vnd.sun.star.uno-component;type=Python"
+  manifest:full-path="elise_appearance.py"/>
+  
+  <manifest:file-entry manifest:media-type="application/vnd.sun.star.configuration-data"
+  manifest:full-path="Jobs.xcu"/>
 
 </manifest:manifest>

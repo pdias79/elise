@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="Calendrier.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="33.625"
+     inkscape:cx="11.405204"
+     inkscape:cy="12"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <rect
+     style="fill:#008080;stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+     id="calendrier"
+     width="22"
+     height="18"
+     x="1"
+     y="5" />
+  <rect
+     style="fill:#008080;stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+     id="anneau_1"
+     width="1"
+     height="3"
+     x="4"
+     y="2" />
+  <rect
+     style="fill:#008080;stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+     id="anneau_2"
+     width="1"
+     height="3"
+     x="9"
+     y="2" />
+  <rect
+     style="fill:#008080;stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+     id="anneau_3"
+     width="1"
+     height="3"
+     x="14"
+     y="2" />
+  <rect
+     style="fill:#008080;stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+     id="anneau_4"
+     width="1"
+     height="3"
+     x="19"
+     y="2" />
+  <rect
+     style="fill:#ffffff;stroke:none;stroke-width:0"
+     id="rect2"
+     width="5"
+     height="3"
+     x="3"
+     y="8" />
+  <rect
+     style="fill:#ffffff;stroke:none;stroke-width:0"
+     id="rect2-7"
+     width="5"
+     height="3"
+     x="9.5"
+     y="8" />
+  <rect
+     style="fill:#ffffff;stroke:none;stroke-width:0"
+     id="rect2-2"
+     width="5"
+     height="3"
+     x="16"
+     y="8" />
+  <rect
+     style="fill:#ffffff;stroke:none;stroke-width:0"
+     id="rect2-1"
+     width="5"
+     height="3"
+     x="3"
+     y="13" />
+  <rect
+     style="fill:#ffffff;stroke:none;stroke-width:0"
+     id="rect6"
+     width="5"
+     height="3"
+     x="3"
+     y="18" />
+  <rect
+     style="fill:#ffffff;stroke:none;stroke-width:0"
+     id="rect7"
+     width="5"
+     height="3"
+     x="9.5"
+     y="13" />
+  <rect
+     style="fill:#ffffff;stroke:none;stroke-width:0"
+     id="rect8"
+     width="5"
+     height="3"
+     x="16"
+     y="13" />
+  <rect
+     style="fill:#ffffff;stroke:none;stroke-width:0"
+     id="rect9"
+     width="5"
+     height="3"
+     x="9.5"
+     y="18" />
+  <rect
+     style="fill:#ffffff;stroke:none;stroke-width:0"
+     id="rect10"
+     width="5"
+     height="3"
+     x="16"
+     y="18" />
+</svg>

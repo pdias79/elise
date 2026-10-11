@@ -237,104 +237,106 @@
       <node oor:name="i01_EncadrerTexteEnRouge" oor:op="replace">
         <prop oor:name="URL"><value>macro:///elise.format.EncadrerTexteEnRouge</value></prop>
         <node oor:name="UserDefinedImages">
-          <prop oor:name="ImageSmallURL"><value>%origin%/icons/Encadrer_Rouge.svg</value></prop>
-          <prop oor:name="ImageBigURL"><value>%origin%/icons/Encadrer_Rouge.svg</value></prop>
+          <prop oor:name="ImageSmallURL"><value>%origin%/icons/light/Encadrer_Rouge.svg</value></prop>
+          <prop oor:name="ImageBigURL"><value>%origin%/icons/light/Encadrer_Rouge.svg</value></prop>
+          <prop oor:name="ImageSmallHCURL"><value>%origin%/icons/light/Encadrer_Rouge_dark.svg</value></prop>
+          <prop oor:name="ImageBigHCURL"><value>%origin%/icons/light/Encadrer_Rouge_dark.svg</value></prop>
         </node>
       </node>
 
       <node oor:name="i02_EncadrerTexteEnVert" oor:op="replace">
         <prop oor:name="URL"><value>macro:///elise.format.EncadrerTexteEnVert</value></prop>
         <node oor:name="UserDefinedImages">
-          <prop oor:name="ImageSmallURL"><value>%origin%/icons/Encadrer_Vert.svg</value></prop>
-          <prop oor:name="ImageBigURL"><value>%origin%/icons/Encadrer_Vert.svg</value></prop>
+          <prop oor:name="ImageSmallURL"><value>%origin%/icons/light/Encadrer_Vert.svg</value></prop>
+          <prop oor:name="ImageBigURL"><value>%origin%/icons/light/Encadrer_Vert.svg</value></prop>
         </node>
       </node>
 
       <node oor:name="i03_EncadrerTexteEnBleu" oor:op="replace">
         <prop oor:name="URL"><value>macro:///elise.format.EncadrerTexteEnBleu</value></prop>
         <node oor:name="UserDefinedImages">
-          <prop oor:name="ImageSmallURL"><value>%origin%/icons/Encadrer_Bleu.svg</value></prop>
-          <prop oor:name="ImageBigURL"><value>%origin%/icons/Encadrer_Bleu.svg</value></prop>
+          <prop oor:name="ImageSmallURL"><value>%origin%/icons/light/Encadrer_Bleu.svg</value></prop>
+          <prop oor:name="ImageBigURL"><value>%origin%/icons/light/Encadrer_Bleu.svg</value></prop>
         </node>
       </node>
 
       <node oor:name="i04_EncadrerTexteEnRose" oor:op="replace">
         <prop oor:name="URL"><value>macro:///elise.format.EncadrerTexteEnRose</value></prop>
         <node oor:name="UserDefinedImages">
-          <prop oor:name="ImageSmallURL"><value>%origin%/icons/Encadrer_Rose.svg</value></prop>
-          <prop oor:name="ImageBigURL"><value>%origin%/icons/Encadrer_Rose.svg</value></prop>
+          <prop oor:name="ImageSmallURL"><value>%origin%/icons/light/Encadrer_Rose.svg</value></prop>
+          <prop oor:name="ImageBigURL"><value>%origin%/icons/light/Encadrer_Rose.svg</value></prop>
         </node>
       </node>
 
       <node oor:name="i05_EncadrerTexteEnJaune" oor:op="replace">
         <prop oor:name="URL"><value>macro:///elise.format.EncadrerTexteEnJaune</value></prop>
         <node oor:name="UserDefinedImages">
-          <prop oor:name="ImageSmallURL"><value>%origin%/icons/Encadrer_Jaune.svg</value></prop>
-          <prop oor:name="ImageBigURL"><value>%origin%/icons/Encadrer_Jaune.svg</value></prop>
+          <prop oor:name="ImageSmallURL"><value>%origin%/icons/light/Encadrer_Jaune.svg</value></prop>
+          <prop oor:name="ImageBigURL"><value>%origin%/icons/light/Encadrer_Jaune.svg</value></prop>
         </node>
       </node>
 
       <node oor:name="i06_EncadrerTexteEnNoir" oor:op="replace">
         <prop oor:name="URL"><value>macro:///elise.format.EncadrerTexteEnNoir</value></prop>
         <node oor:name="UserDefinedImages">
-          <prop oor:name="ImageSmallURL"><value>%origin%/icons/Encadrer_Noir.svg</value></prop>
-          <prop oor:name="ImageBigURL"><value>%origin%/icons/Encadrer_Noir.svg</value></prop>
+          <prop oor:name="ImageSmallURL"><value>%origin%/icons/light/Encadrer_Noir.svg</value></prop>
+          <prop oor:name="ImageBigURL"><value>%origin%/icons/light/Encadrer_Noir.svg</value></prop>
         </node>
       </node>
 
       <node oor:name="i07_SupprimerEncadrementTexte" oor:op="replace">
         <prop oor:name="URL"><value>macro:///elise.format.SupprimerEncadrementTexte</value></prop>
         <node oor:name="UserDefinedImages">
-          <prop oor:name="ImageSmallURL"><value>%origin%/icons/Rien.svg</value></prop>
-          <prop oor:name="ImageBigURL"><value>%origin%/icons/Rien.svg</value></prop>
+          <prop oor:name="ImageSmallURL"><value>%origin%/icons/light/Rien.svg</value></prop>
+          <prop oor:name="ImageBigURL"><value>%origin%/icons/light/Rien.svg</value></prop>
         </node>
       </node>
 
       <node oor:name="i11_SouslignerTexteEnRouge" oor:op="replace">
         <prop oor:name="URL"><value>macro:///elise.format.SoulignerTexteEnRouge</value></prop>
         <node oor:name="UserDefinedImages">
-          <prop oor:name="ImageSmallURL"><value>%origin%/icons/Souligner_Rouge.svg</value></prop>
-          <prop oor:name="ImageBigURL"><value>%origin%/icons/Souligner_Rouge.svg</value></prop>
+          <prop oor:name="ImageSmallURL"><value>%origin%/icons/light/Souligner_Rouge.svg</value></prop>
+          <prop oor:name="ImageBigURL"><value>%origin%/icons/light/Souligner_Rouge.svg</value></prop>
         </node>
       </node>
 
       <node oor:name="i12_SouslignerTexteEnVert" oor:op="replace">
         <prop oor:name="URL"><value>macro:///elise.format.SoulignerTexteEnVert</value></prop>
         <node oor:name="UserDefinedImages">
-          <prop oor:name="ImageSmallURL"><value>%origin%/icons/Souligner_Vert.svg</value></prop>
-          <prop oor:name="ImageBigURL"><value>%origin%/icons/Souligner_Vert.svg</value></prop>
+          <prop oor:name="ImageSmallURL"><value>%origin%/icons/light/Souligner_Vert.svg</value></prop>
+          <prop oor:name="ImageBigURL"><value>%origin%/icons/light/Souligner_Vert.svg</value></prop>
         </node>
       </node>
 
       <node oor:name="i13_SouslignerTexteEnBleu" oor:op="replace">
         <prop oor:name="URL"><value>macro:///elise.format.SoulignerTexteEnBleu</value></prop>
         <node oor:name="UserDefinedImages">
-          <prop oor:name="ImageSmallURL"><value>%origin%/icons/Souligner_Bleu.svg</value></prop>
-          <prop oor:name="ImageBigURL"><value>%origin%/icons/Souligner_Bleu.svg</value></prop>
+          <prop oor:name="ImageSmallURL"><value>%origin%/icons/light/Souligner_Bleu.svg</value></prop>
+          <prop oor:name="ImageBigURL"><value>%origin%/icons/light/Souligner_Bleu.svg</value></prop>
         </node>
       </node>
 
       <node oor:name="i14_SouslignerTexteEnRose" oor:op="replace">
         <prop oor:name="URL"><value>macro:///elise.format.SoulignerTexteEnRose</value></prop>
         <node oor:name="UserDefinedImages">
-          <prop oor:name="ImageSmallURL"><value>%origin%/icons/Souligner_Rose.svg</value></prop>
-          <prop oor:name="ImageBigURL"><value>%origin%/icons/Souligner_Rose.svg</value></prop>
+          <prop oor:name="ImageSmallURL"><value>%origin%/icons/light/Souligner_Rose.svg</value></prop>
+          <prop oor:name="ImageBigURL"><value>%origin%/icons/light/Souligner_Rose.svg</value></prop>
         </node>
       </node>
 
       <node oor:name="i15_SouslignerTexteEnJaune" oor:op="replace">
         <prop oor:name="URL"><value>macro:///elise.format.SoulignerTexteEnJaune</value></prop>
         <node oor:name="UserDefinedImages">
-          <prop oor:name="ImageSmallURL"><value>%origin%/icons/Souligner_Jaune.svg</value></prop>
-          <prop oor:name="ImageBigURL"><value>%origin%/icons/Souligner_Jaune.svg</value></prop>
+          <prop oor:name="ImageSmallURL"><value>%origin%/icons/light/Souligner_Jaune.svg</value></prop>
+          <prop oor:name="ImageBigURL"><value>%origin%/icons/light/Souligner_Jaune.svg</value></prop>
         </node>
       </node>
 
       <node oor:name="i16_SouslignerTexteEnNoir" oor:op="replace">
         <prop oor:name="URL"><value>macro:///elise.format.SoulignerTexteEnNoir</value></prop>
         <node oor:name="UserDefinedImages">
-          <prop oor:name="ImageSmallURL"><value>%origin%/icons/Souligner_Noir.svg</value></prop>
-          <prop oor:name="ImageBigURL"><value>%origin%/icons/Souligner_Noir.svg</value></prop>
+          <prop oor:name="ImageSmallURL"><value>%origin%/icons/light/Souligner_Noir.svg</value></prop>
+          <prop oor:name="ImageBigURL"><value>%origin%/icons/light/Souligner_Noir.svg</value></prop>
         </node>
       </node>
 
@@ -342,64 +344,64 @@
       <node oor:name="i21_SurlignerTexteEnRouge" oor:op="replace">
         <prop oor:name="URL"><value>macro:///elise.format.SurlignerTexteEnRouge</value></prop>
         <node oor:name="UserDefinedImages">
-          <prop oor:name="ImageSmallURL"><value>%origin%/icons/Surligner_Rouge.svg</value></prop>
-          <prop oor:name="ImageBigURL"><value>%origin%/icons/Surligner_Rouge.svg</value></prop>
+          <prop oor:name="ImageSmallURL"><value>%origin%/icons/light/Surligner_Rouge.svg</value></prop>
+          <prop oor:name="ImageBigURL"><value>%origin%/icons/light/Surligner_Rouge.svg</value></prop>
         </node>
       </node>
 
       <node oor:name="i22_SurlignerTexteEnVert" oor:op="replace">
         <prop oor:name="URL"><value>macro:///elise.format.SurlignerTexteEnVert</value></prop>
         <node oor:name="UserDefinedImages">
-          <prop oor:name="ImageSmallURL"><value>%origin%/icons/Surligner_Vert.svg</value></prop>
-          <prop oor:name="ImageBigURL"><value>%origin%/icons/Surligner_Vert.svg</value></prop>
+          <prop oor:name="ImageSmallURL"><value>%origin%/icons/light/Surligner_Vert.svg</value></prop>
+          <prop oor:name="ImageBigURL"><value>%origin%/icons/light/Surligner_Vert.svg</value></prop>
         </node>
       </node>
 
       <node oor:name="i23_SurlignerTexteEnBleu" oor:op="replace">
         <prop oor:name="URL"><value>macro:///elise.format.SurlignerTexteEnBleu</value></prop>
         <node oor:name="UserDefinedImages">
-          <prop oor:name="ImageSmallURL"><value>%origin%/icons/Surligner_Bleu.svg</value></prop>
-          <prop oor:name="ImageBigURL"><value>%origin%/icons/Surligner_Bleu.svg</value></prop>
+          <prop oor:name="ImageSmallURL"><value>%origin%/icons/light/Surligner_Bleu.svg</value></prop>
+          <prop oor:name="ImageBigURL"><value>%origin%/icons/light/Surligner_Bleu.svg</value></prop>
         </node>
       </node>
 
       <node oor:name="i24_SurlignerTexteEnRose" oor:op="replace">
         <prop oor:name="URL"><value>macro:///elise.format.SurlignerTexteEnRose</value></prop>
         <node oor:name="UserDefinedImages">
-          <prop oor:name="ImageSmallURL"><value>%origin%/icons/Surligner_Rose.svg</value></prop>
-          <prop oor:name="ImageBigURL"><value>%origin%/icons/Surligner_Rose.svg</value></prop>
+          <prop oor:name="ImageSmallURL"><value>%origin%/icons/light/Surligner_Rose.svg</value></prop>
+          <prop oor:name="ImageBigURL"><value>%origin%/icons/light/Surligner_Rose.svg</value></prop>
         </node>
       </node>
 
       <node oor:name="i25_SurlignerTexteEnJaune" oor:op="replace">
         <prop oor:name="URL"><value>macro:///elise.format.SurlignerTexteEnJaune</value></prop>
         <node oor:name="UserDefinedImages">
-          <prop oor:name="ImageSmallURL"><value>%origin%/icons/Surligner_Jaune.svg</value></prop>
-          <prop oor:name="ImageBigURL"><value>%origin%/icons/Surligner_Jaune.svg</value></prop>
+          <prop oor:name="ImageSmallURL"><value>%origin%/icons/light/Surligner_Jaune.svg</value></prop>
+          <prop oor:name="ImageBigURL"><value>%origin%/icons/light/Surligner_Jaune.svg</value></prop>
         </node>
       </node>
 
       <node oor:name="i26_SurlignerTexteEnNoir" oor:op="replace">
         <prop oor:name="URL"><value>macro:///elise.format.SurlignerTexteEnNoir</value></prop>
         <node oor:name="UserDefinedImages">
-          <prop oor:name="ImageSmallURL"><value>%origin%/icons/Surligner_Noir.svg</value></prop>
-          <prop oor:name="ImageBigURL"><value>%origin%/icons/Surligner_Noir.svg</value></prop>
+          <prop oor:name="ImageSmallURL"><value>%origin%/icons/light/Surligner_Noir.svg</value></prop>
+          <prop oor:name="ImageBigURL"><value>%origin%/icons/light/Surligner_Noir.svg</value></prop>
         </node>
       </node>
 
       <node oor:name="i27_SupprimerSurlignageTexte" oor:op="replace">
         <prop oor:name="URL"><value>macro:///elise.format.SupprimerSurlignageTexte</value></prop>
         <node oor:name="UserDefinedImages">
-          <prop oor:name="ImageSmallURL"><value>%origin%/icons/Rien.svg</value></prop>
-          <prop oor:name="ImageBigURL"><value>%origin%/icons/Rien.svg</value></prop>
+          <prop oor:name="ImageSmallURL"><value>%origin%/icons/light/Rien.svg</value></prop>
+          <prop oor:name="ImageBigURL"><value>%origin%/icons/light/Rien.svg</value></prop>
         </node>
       </node>
 
       <node oor:name="i41_InsererDateCours" oor:op="replace">
         <prop oor:name="URL"><value>macro:///elise.format.InsererDateCours</value></prop>
         <node oor:name="UserDefinedImages">
-          <prop oor:name="ImageSmallURL"><value>%origin%/icons/Calendrier.svg</value></prop>
-          <prop oor:name="ImageBigURL"><value>%origin%/icons/Calendrier.svg</value></prop>
+          <prop oor:name="ImageSmallURL"><value>%origin%/icons/light/Calendrier.svg</value></prop>
+          <prop oor:name="ImageBigURL"><value>%origin%/icons/light/Calendrier.svg</value></prop>
         </node>
       </node>
 

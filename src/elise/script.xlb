@@ -5,4 +5,5 @@
                  library:readonly="false"
                  library:passwordprotected="false">
   <library:element library:name="format"/>
+  <library:element library:name="icones"/>
 </library:library>

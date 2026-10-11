@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="format" script:language="Basic">
+<![CDATA[
+Sub TesterEliseSombre()
+    ChangerIconeElise("Encadrer_Rouge_dark.svg")
+End Sub
+
+Sub TesterEliseClair()
+    ChangerIconeElise("Encadrer_Rouge.svg")
+End Sub
+
+Sub ChangerIconeElise(sFichier As String)
+    Dim oPkg As Object
+    Dim sBase As String
+    Dim oProvider As Object
+    Dim oGraphic As Object
+    Dim oSupplier As Object
+    Dim oManager As Object
+    Dim oImages As Object
+    Dim aProps(0) As New com.sun.star.beans.PropertyValue
+    Dim aURLs(0) As String
+    Dim aGraphics(0) As Object
+    Dim i As Integer
+
+    ' Chemin de l'extension installee
+    oPkg = GetDefaultContext().getByName( _
+        "/singletons/com.sun.star.deployment.PackageInformationProvider")
+
+    sBase = oPkg.getPackageLocation("com.pdias79.elise")
+
+    If sBase = "" Then
+        MsgBox "Extension Elise introuvable"
+        Exit Sub
+    End If
+
+    ' Chargement du SVG
+    aProps(0).Name = "URL"
+    aProps(0).Value = sBase & "/icons/" & sFichier
+
+    oProvider = CreateUnoService( _
+        "com.sun.star.graphic.GraphicProvider")
+
+    oGraphic = oProvider.queryGraphic(aProps())
+
+    If IsNull(oGraphic) Then
+        MsgBox "Impossible de charger le SVG"
+        Exit Sub
+    End If
+
+    ' Gestionnaire des images Writer
+    oSupplier = CreateUnoService( _
+        "com.sun.star.ui.ModuleUIConfigurationManagerSupplier")
+
+    oManager = oSupplier.getUIConfigurationManager( _
+        "com.sun.star.text.TextDocument")
+
+    oImages = oManager.getImageManager()
+
+    aURLs(0) = "macro:///elise.format.EncadrerTexteEnRouge"
+    aGraphics(0) = oGraphic
+
+    ' Tailles normale, grande et 32 pixels
+    For i = 0 To 2
+        If oImages.hasImage(i, aURLs(0)) Then
+            oImages.replaceImages(i, aURLs(), aGraphics())
+        Else
+            oImages.insertImages(i, aURLs(), aGraphics())
+        End If
+    Next i
+End Sub
+
+]]>
+
+</script:module>
