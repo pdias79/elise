@@ -23,9 +23,6 @@
     manifest:full-path="elise/format.xba"/>
 
   <manifest:file-entry
-    manifest:media-type="application/vnd.sun.star.basic-module"
-    manifest:full-path="elise/icones.xba"/>
-  <manifest:file-entry
     manifest:media-type="text/xml"
     manifest:full-path="elise/dialog.xlb"/>
 
